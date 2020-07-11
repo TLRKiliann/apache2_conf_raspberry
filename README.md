@@ -21,37 +21,37 @@ Let's go !
 	INSTALL APACHE2 :
 	=================
 
-sudo apt update
+> sudo apt update
 
-sudo apt upgrade
+> sudo apt upgrade
 
-sudo apt install apache2
+> sudo apt install apache2
 
-sudo chown -R pi:www-data /var/www/html/
+> sudo chown -R pi:www-data /var/www/html/
 
-sudo chmod -R 770 /var/www/html/
+> sudo chmod -R 770 /var/www/html/
 
-wget -O verif_apache.html http://127.0.0.1
+> wget -O verif_apache.html http://127.0.0.1
 
-cat ./verif_apache.html
-
-
-	 INSTALL PHP :
-	 =============
-
-sudo apt install php php-mbstring
-
-sudo rm /var/www/html/index.html
-
-echo "<?php phpinfo(); ?>" > /var/www/html/index.php
+> cat ./verif_apache.html
 
 
-	 INSTALL MySQL :
-	 ===============
+	INSTALL PHP :
+	=============
 
-sudo apt install mariadb-server php-mysql
+> sudo apt install php php-mbstring
 
-sudo mysql --user=root
+> sudo rm /var/www/html/index.html
+
+> echo "<?php phpinfo(); ?>" > /var/www/html/index.php
+
+
+	INSTALL MySQL :
+	===============
+
+> sudo apt install mariadb-server php-mysql
+
+> sudo mysql --user=root
 
 >DROP USER 'root'@'localhost';
 
@@ -61,8 +61,8 @@ sudo mysql --user=root
 
 >exit
 
-	 INSTALL PHPMyAdmin :
-	 ====================
+	INSTALL PHPMyAdmin :
+	====================
 
 sudo apt install phpmyadmin
 
