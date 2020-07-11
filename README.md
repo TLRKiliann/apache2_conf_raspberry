@@ -51,9 +51,9 @@ sudo apt install mariadb-server php-mysql
 
 sudo mysql --user=root
 
->DROP USER 'root'@'localhost';
->CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
->GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+>DROP USER 'root'@'localhost';\n
+>CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';\n
+>GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;\n
 
 >exit
 
