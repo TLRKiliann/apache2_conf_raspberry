@@ -12,9 +12,9 @@ Also, you can find another directory I made to configure a self-signed ssl
 certificate with openssl called "apache2-ssl".
 In this tutorial, I will show you how to install successively :
 + apache2
-+ php
++ PHP
 + MySQL
-+ phpmyadmin
++ PHPMyAdmin
 
 INSTALL APACHE2 :
 =================
