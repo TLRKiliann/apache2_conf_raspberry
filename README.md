@@ -11,6 +11,7 @@ I thought it would be nice to make a guide to configure apache2 on a rapsberry
 Also, you can find another directory I made to configure a self-signed ssl
 certificate with openssl called "apache2-ssl".
 In this tutorial, I will show you how to install successively :
+
 + apache2
 + PHP
 + MySQL
@@ -51,9 +52,11 @@ sudo apt install mariadb-server php-mysql
 
 sudo mysql --user=root
 
->DROP USER 'root'@'localhost';\n
->CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';\n
->GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;\n
+>DROP USER 'root'@'localhost';
+
+>CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+
+>GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
 >exit
 
