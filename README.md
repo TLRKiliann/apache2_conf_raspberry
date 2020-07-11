@@ -1,5 +1,6 @@
 
---- 	APACHE2 SERVER CONFIGURATION PHP, MYSQL, PHPMYADMIN AND MORE...   ---
+APACHE2 SERVER CONFIGURATION PHP, MYSQL, PHPMYADMIN AND MORE...
+---------------------------------------------------------------
 
 Hello,
 
@@ -14,8 +15,8 @@ In this tutorial, I will show you how to install successively :
 + MySQL
 + PHPMyAdmin
 
- 	 INSTALL APACHE2 :
- 	 =================
+      INSTALL APACHE2 :
+      =================
 
 sudo apt update
 
