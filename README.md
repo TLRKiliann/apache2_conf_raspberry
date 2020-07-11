@@ -3,6 +3,7 @@
 APACHE2 SERVER CONFIGURATION PHP, MYSQL, PHPMYADMIN AND MORE...
 
 ==============================================================================
+
 Hello,
 
 I thought it would be nice to make a guide to configure apache2 on a rapsberry 
