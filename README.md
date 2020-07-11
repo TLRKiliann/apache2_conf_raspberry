@@ -1,6 +1,6 @@
 
-APACHE2 SERVER CONFIGURATION PHP, MYSQL, PHPMYADMIN AND MORE...
----------------------------------------------------------------
+APACHE2 SERVER CONFIGURATION WITH PHP, MySQL, PHPMyAdmin AND MORE...
+--------------------------------------------------------------------
 
 Hello,
 
@@ -33,8 +33,8 @@ wget -O verif_apache.html http://127.0.0.1
 cat ./verif_apache.html
 
 
-	INSTALL PHP :
-	=============
+	 INSTALL PHP :
+	 =============
 
 sudo apt install php php-mbstring
 
@@ -43,8 +43,8 @@ sudo rm /var/www/html/index.html
 echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 
 
-	INSTALL MySQL :
-	===============
+	 INSTALL MySQL :
+	 ===============
 
 sudo apt install mariadb-server php-mysql
 
@@ -58,8 +58,8 @@ sudo mysql --user=root
 
 >exit
 
-	INSTALL PHPMyAdmin :
-	====================
+	 INSTALL PHPMyAdmin :
+	 ====================
 
 sudo apt install phpmyadmin
 
