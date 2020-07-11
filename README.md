@@ -16,6 +16,36 @@ In this tutorial, I will show you how to install successively :
 + MySQL
 + phpmyadmin
 
+APACHE2 :
+=========
+
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt install apache2
+
+sudo chown -R pi:www-data /var/www/html/
+
+sudo chmod -R 770 /var/www/html/
+
+wget -O verif_apache.html http://127.0.0.1
+
+cat ./verif_apache.html
+
+sudo apt install php php-mbstring
+
+sudo rm /var/www/html/index.html
+
+echo "<?php phpinfo(); ?>" > /var/www/html/index.php
+
+sudo apt install mariadb-server php-mysql
+
+sudo mysql --user=root
+
+DROP USER 'root'@'localhost';
+
+
 I will also cover the specifics of apache2 and give you some useful commands
 to check and test your configuration.
 
