@@ -1,8 +1,7 @@
-=======================================================================================
 
 		APACHE2 SERVER CONFIGURATION PHP, MYSQL, PHPMYADMIN AND MORE...
 
-=======================================================================================
+---------------------------------------------------------------------------------------
 
 Hello,
 
@@ -92,7 +91,7 @@ I want also show you how to configure apache files, such as :
 to the directory : /etc/apache2/
 
 
-Enjoy it and hope to be helpfull !
+Enjoy it and hoping to have been helpful !
 
 ko@l@tr33
 
