@@ -16,8 +16,8 @@ In this tutorial, I will show you how to install successively :
 + MySQL
 + phpmyadmin
 
-APACHE2 :
-=========
+INSTALL APACHE2 :
+=================
 
 sudo apt update
 
@@ -33,30 +33,61 @@ wget -O verif_apache.html http://127.0.0.1
 
 cat ./verif_apache.html
 
+
+INSTALL PHP :
+=============
+
 sudo apt install php php-mbstring
 
 sudo rm /var/www/html/index.html
 
 echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 
+
+INSTALL MySQL :
+===============
+
 sudo apt install mariadb-server php-mysql
 
 sudo mysql --user=root
 
-DROP USER 'root'@'localhost';
+>DROP USER 'root'@'localhost';
+>CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+>GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
+>exit
+
+INSTALL PHPMyAdmin :
+====================
+
+sudo apt install phpmyadmin
+
+select apache2 server
+select "no" for question relating dbconfig-common
+
+sudo phpenmod mysqli
+
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+
+Allow port 80 to fire-wall :
+For example with ufw :
+
+sudo ufw allow 80/tcp
+
+
+The ssl configuration is coming soon in the directory "apache2-ssl".
 
 I will also cover the specifics of apache2 and give you some useful commands
 to check and test your configuration.
 
-I will also show you what the configurations of apache files are, such as :
+I want also show you how to configure apache files, such as :
 + apache2.conf
 + sites-available.conf
 + ports.conf
 + /etc/hosts
 + etc...
+to the directory : /etc/apache2/
 
-The ssl configuration files will soon come in the directory "apache2-ssl".
 
 Enjoy it and hope to be helpfull !
 
