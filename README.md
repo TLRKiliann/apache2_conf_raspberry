@@ -15,8 +15,11 @@ In this tutorial, I will show you how to install successively :
 + MySQL
 + PHPMyAdmin
 
-      INSTALL APACHE2 :
-      =================
+Let's go !
+
+
+	INSTALL APACHE2 :
+	=================
 
 sudo apt update
 
