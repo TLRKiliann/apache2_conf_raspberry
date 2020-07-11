@@ -64,19 +64,20 @@ Let's go !
 	INSTALL PHPMyAdmin :
 	====================
 
-sudo apt install phpmyadmin
+> sudo apt install phpmyadmin
 
 select apache2 server
 select "no" for question relating dbconfig-common
 
-sudo phpenmod mysqli
+> sudo phpenmod mysqli
 
-sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+> sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
-Allow port 80 to fire-wall :
+Allow port 80 to fire-wall.
+
 For example with ufw :
 
-sudo ufw allow 80/tcp
+> sudo ufw allow 80/tcp
 
 
 The ssl configuration is coming soon in the directory "apache2-ssl".
